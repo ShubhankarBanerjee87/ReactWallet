@@ -24,11 +24,11 @@ function Create() {
   const arr = Phrase.split(' ');
 
   function getBack() {
-    navigate("/")
+    navigate("/ReactWallet")
   }
 
   function getNext(){
-    navigate("/wallet")
+    navigate("/ReactWallet/wallet")
   }
 
   function SaveToLocalStorage() {

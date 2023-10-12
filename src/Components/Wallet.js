@@ -58,12 +58,12 @@ function Wallet() {
 
 
     function ImportToken() {
-        navigate("/import-token")
+        navigate("/ReactWallet/import-token")
     }
 
     const TokenWindow = (index) => {
         localStorage.setItem('Index', index);
-        navigate("/token-details")
+        navigate("/ReactWallet/token-details")
     }
 
     function RetrieveAccountFromLocalStorage() {
@@ -248,7 +248,7 @@ function Wallet() {
                             <RetrieveNetworkFromLocalStorage />
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a className="dropdown-item" href="/change-network">Change Network</a></li>
+                            <li><a className="dropdown-item" href="/ReactWallet/change-network">Change Network</a></li>
                         </ul>
                     </div>
                 </div>

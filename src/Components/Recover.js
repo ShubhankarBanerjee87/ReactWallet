@@ -16,11 +16,11 @@ function Recover() {
     const navigate = useNavigate();
 
     function getBack() {
-        navigate("/")
+        navigate("/ReactWallet")
     }
 
     function getNext() {
-        navigate("/wallet")
+        navigate("/ReactWallet/wallet")
     }
 
     function Clear() {

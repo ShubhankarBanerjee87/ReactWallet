@@ -6,20 +6,22 @@ import Token from "./Components/Importtoken";
 import Tokenwindow from "./Components/Windowtoken";
 import RecoverWallet from "./Components/Recover"
 import ChangeNetwork from "./Components/ChangeNetwork";
-import { Route,Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      <Route path = "/" element = {<Firstpage />}/>
-      <Route path = "/create" element = {<Create />}/>
-      <Route path="/wallet" element= {<Wallet />} />
-      <Route path="/import-token" element= {<Token />} />
-      <Route path="/token-details" element= {<Tokenwindow />} />
-      <Route path="/recover-wallet" element = {<RecoverWallet/>} />
-      <Route path="/change-network" element = {<ChangeNetwork/>} />
-    </Routes>
+    <switch>
+      <Routes>
+        <Route path="/ReactWallet" element={<Firstpage />} />
+        <Route path="/ReactWallet/create" element={<Create />} />
+        <Route path="/ReactWallet/wallet" element={<Wallet />} />
+        <Route path="/ReactWallet/import-token" element={<Token />} />
+        <Route path="/ReactWallet/token-details" element={<Tokenwindow />} />
+        <Route path="/ReactWallet/recover-wallet" element={<RecoverWallet />} />
+        <Route path="/ReactWallet/change-network" element={<ChangeNetwork />} />
+      </Routes>
+    </switch>
   );
 }
-  
+
 export default App;

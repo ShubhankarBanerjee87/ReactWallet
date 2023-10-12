@@ -7,7 +7,7 @@ function Importtoken() {
   const navigate = useNavigate();
 
   function Wallet() {
-    navigate("/wallet");
+    navigate("/ReactWallet/wallet");
   }
 
   const [formData, setFormData] = useState({

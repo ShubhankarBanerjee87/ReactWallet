@@ -62,7 +62,7 @@ function Windowtoken() {
     }
 
     function closeWindowTooken() {
-        navigate("/wallet")
+        navigate("/ReactWallet/wallet")
     }
 
     function RetrieveContractAddressFromLocalStorage() {

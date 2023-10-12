@@ -7,7 +7,7 @@ function Firstpage() {
   const navigate = useNavigate();
 
   function createAccount() {
-    navigate("/create");
+    navigate("/ReactWallet/create");
   }
 
   function ClearLocalStorage() {
@@ -15,7 +15,7 @@ function Firstpage() {
   }
 
   function recoverAccount() {
-    navigate("/recover-wallet")
+    navigate("/ReactWallet/recover-wallet")
   }
 
   return (

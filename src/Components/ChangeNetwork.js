@@ -56,7 +56,7 @@ function ChangeNetwork() {
     }
 
     const closeNetworkChange = () => {
-        navigate("/wallet")
+        navigate("/ReactWallet/wallet")
     } 
 
     const CallChangeNetwork = () => {
